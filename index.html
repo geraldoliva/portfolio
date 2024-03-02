@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerald Oliva | Java Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">&lt;go.dev&gt;</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">&lt;go.dev&gt;</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="gray-background-container">
+      <section id="profile">
+        <div class="section__pic-container">
+          <img src="./assets/gerald.png" alt="My profile picture" />
+        </div>
+        <div class="section__text">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title">Gerald Oliva</h1>
+          <p class="section__text__p2">Full Stack Java Developer</p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('./assets/resume.pdf')"
+            >
+              Download CV
+            </button>
+            <button
+              class="btn btn-color-1"
+              onclick="location.href='./#contact'"
+            >
+              Contact Info
+            </button>
+          </div>
+          <div id="socials-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+              onclick="location.href='https://www.linkedin.com/in/geraldoliva/'"
+            />
+            <img
+              src="./assets/github.png"
+              alt="My Github profile"
+              class="icon"
+              onclick="location.href='https://github.com/geraldoliva'"
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/gerald.png"
+            alt="My Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <!-- <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Frontend Development</p>
+            </div> -->
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.S. in Computer Science</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Thanks for visiting&excl; I live in the Washington, D.C., metro
+              area. I enjoy building clean and user-friendly applications, and
+              am always ready to learn new technologies and methods as per the
+              project requirements. Below are a number of selected apps from my
+              portfolio.
+              <br />
+              <br />
+              I am looking to bring my enthusiasm and eagerness to a team where
+              I can contribute and continue to grow as a developer. Let&apos;s
+              make something special&excl;
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Tech Stack</h2>
+            <div class="article-container">
+              <article>
+                <div>
+                  <img
+                    class="skills-icon"
+                    src="./assets/java.png"
+                    alt="Java icon"
+                  />
+                  <h4>Java</h4>
+                </div>
+              </article>
+
+              <article>
+                <div>
+                  <img
+                    class="skills-icon"
+                    src="./assets/spring-boot.png"
+                    alt="Spring Boot icon"
+                  />
+                  <h4>Spring Boot</h4>
+                </div>
+              </article>
+
+              <article>
+                <div>
+                  <img
+                    class="skills-icon"
+                    src="./assets/mysql.png"
+                    alt="MySQL icon"
+                  />
+                  <h4>MySQL</h4>
+                </div>
+              </article>
+
+              <article>
+                <div>
+                  <img
+                    class="skills-icon"
+                    src="./assets/Angular.svg"
+                    alt="Angular icon"
+                  />
+                  <h4>Angular</h4>
+                </div>
+              </article>
+
+              <article>
+                <div>
+                  <img
+                    class="skills-icon"
+                    src="./assets/javascript.png"
+                    alt="Javascript icon"
+                  />
+                  <h4>Javascript</h4>
+                </div>
+              </article>
+
+              <article>
+                <div>
+                  <img
+                    class="skills-icon"
+                    src="./assets/html5.png"
+                    alt="HTML icon"
+                  />
+                  <h4>HTML</h4>
+                </div>
+              </article>
+
+              <article>
+                <div>
+                  <img
+                    class="skills-icon"
+                    src="./assets/css3.png"
+                    alt="CSS icon"
+                  />
+                  <h4>CSS</h4>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+    <div class="gray-background-container">
+      <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <!-- Project 1 -->
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-1.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Ecommerce App</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('https://github.com/geraldoliva/ecommerce-project')"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('https://geraldoliva.github.io/angular-ecommerce/')"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-2.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Landing Page</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('https://github.com/geraldoliva/equalizer-landing-page/tree/main')"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('https://gerald-equalizer-landing-page.netlify.app/')"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-3.png"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">
+                NFT Preview Card
+              </h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('https://github.com/geraldoliva/nft-preview-card')"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('https://gerald-nft-preview-card.netlify.app/')"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#contact'"
+        />
+      </section>
+    </div>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:geraldsamoliva@gmail.com"
+              >geraldsamoliva@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/geraldoliva/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <div class="footer-container">
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2024 Gerald Oliva. All Rights Reserved.</p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
