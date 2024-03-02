@@ -171,7 +171,6 @@ section {
   justify-content: center;
   gap: 5rem;
   height: 80vh;
-
 }
 
 .section__pic-container {
@@ -202,6 +201,10 @@ section {
 .title {
   font-size: 3rem;
   text-align: center;
+}
+
+.rounded-img {
+  border-radius: 50%;
 }
 
 #socials-container {
@@ -447,5 +450,5 @@ footer p {
 }
 
 footer a {
-  color: #fff
+  color: #fff;
 }
